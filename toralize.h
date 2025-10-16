@@ -2,6 +2,18 @@
 #include<stdlib.h>
 #include<string.h>
 #include<unistd.h>
+#include<sys/socket.h>
+#include<arpa/inet.h>
+#include<netinet/in.h>
+
+/*
+socket() creates a socket
+connect() connects to remote address
+close() closes a socket
+htons() convert 16-bit value (port number) from host byte to network byte
+inet_addr() converts IPv4 address string to 32-bit binary network address
+*/
+
 
 #define PROXY "127.0.0.1"
 #define PROXYPORT 9050
